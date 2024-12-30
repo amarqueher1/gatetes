@@ -46,7 +46,8 @@ li {
   margin: 0;
 }
 
-h1, h2,
+h1,
+h2,
 .title {
   font-family: Poppins, sans-serif;
 }
@@ -215,4 +216,125 @@ footer .legal-links li {
   display: block;
   width: 100%;
   font-size: 1rem;
+}
+
+figure {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table thead th {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10px;
+}
+
+.table tbody th {
+  text-align: left;
+  padding: 10px;
+}
+
+.table td {
+  background: white;
+  padding: 5px 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.table tr:nth-child(odd) td {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.table caption {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.formulario {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.formulario p {
+  margin-bottom: 20px;
+}
+
+.formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--secondary-color);
+}
+
+.formulario .fieldset {
+  border: 1px solid var(--primary-color);
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.formulario legend {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.formulario .button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.formulario .button:hover {
+  background: var(--primary-color);
+}
+
+.formulario .payment-method {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.formulario .payment-method input {
+  margin-right: 5px;
 }

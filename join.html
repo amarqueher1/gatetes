@@ -11,7 +11,7 @@
   <header>
     <nav class="container">
       <a class="link-logo" href="index.html">
-        <img class="logo"src="images/logo_white.svg" alt="Logo">
+        <img class="logo"src="images/logo.svg" alt="Logo">
       </a>
       <ul class="menu">
         <li class="menu-links">
@@ -24,8 +24,75 @@
   </header>
 
   <main>
-    <div class="container">
+    <div class="container formulario">
+      <h1>Hazte socio</h1>
+        <p>Colabora con Petinder haciéndote socio por solo 15 euros mensuales. Con muy poco puedes ayudar mucho a nuestros amigos peludos. Además, puedes comprar nuestra exclusiva camiseta por solo 10 euros que se añadirán al primer pago. Rellena el siguiente formulario para unirte a nosotros:</p>
+        <form>
+            <fieldset class="fieldset">
+                <legend>Datos personales</legend>
 
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+
+                <label for="apellidos">Apellidos *</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
+
+                <label for="correo">Correo electrónico *</label>
+                <input type="email" id="correo" name="correo" placeholder="Introduce tu correo" required>
+
+                <label for="dni">DNI *</label>
+                <input type="text" id="dni" name="dni" placeholder="Introduce tu DNI" required>
+
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" id="fecha" name="fecha">
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <legend>Dirección</legend>
+
+                <label for="calle">Calle y número *</label>
+                <input type="text" id="calle" name="calle" placeholder="Introduce tu dirección" required>
+
+                <label for="ciudad">Ciudad *</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Introduce tu ciudad" required>
+
+                <label for="provincia">Provincia *</label>
+                <input type="text" id="provincia" name="provincia" placeholder="Introduce tu provincia" required>
+
+                <label for="codigo-postal">Código Postal *</label>
+                <input type="text" id="codigo-postal" name="codigo-postal" placeholder="Introduce tu código postal" required>
+
+                <label for="pais">País</label>
+                <select id="pais" name="pais">
+                    <option value="">Seleccionar</option>
+                    <option value="espana">España</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <legend>Datos de pago y camiseta</legend>
+
+                <label>Método de pago</label>
+                <div class="payment-method">
+                    <label><input type="radio" name="pago" value="transferencia" checked> Transferencia</label>
+                    <label><input type="radio" name="pago" value="tarjeta"> Tarjeta de crédito</label>
+                    <label><input type="radio" name="pago" value="paypal"> Paypal</label>
+                </div>
+
+                <label for="camiseta">Camiseta</label>
+                <p>Si quieres que te enviemos la camiseta Petinder por 10€ más, selecciona la talla a continuación.</p>
+                <select id="camiseta" name="camiseta">
+                    <option value="">No quiero camiseta</option>
+                    <option value="s">Talla S</option>
+                    <option value="m">Talla M</option>
+                    <option value="l">Talla L</option>
+                    <option value="xl">Talla XL</option>
+                </select>
+            </fieldset>
+
+            <button type="submit" class="button">Enviar</button>
+        </form>
     </div>
   </main>
 
